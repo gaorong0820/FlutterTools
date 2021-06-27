@@ -14,11 +14,11 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
-
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
-
-To keep everything working, do not remove `<!-- ... -->` sections. 
+<h2>动态生成模板代码，提高开发效率。</h2>
+<ul>
+<li>自动生成GetX通用页面.</li>
+<li>Json转Dart.</li>
+</ul>
 <!-- Plugin description end -->
 
 ## Installation

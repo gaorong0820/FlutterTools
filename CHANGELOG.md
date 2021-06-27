@@ -3,5 +3,5 @@
 # FlutterTools Changelog
 
 ## [Unreleased]
-### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- 更新日志1
+- 更新日志2
