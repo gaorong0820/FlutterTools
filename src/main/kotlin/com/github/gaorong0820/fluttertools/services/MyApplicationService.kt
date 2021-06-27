@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.gaorong0820.fluttertools.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.gaorong0820.fluttertools.MyBundle
 
 class MyApplicationService {
 

@@ -1,7 +1,7 @@
-package org.jetbrains.plugins.template.services
+package com.github.gaorong0820.fluttertools.services
 
+import com.github.gaorong0820.fluttertools.MyBundle
 import com.intellij.openapi.project.Project
-import org.jetbrains.plugins.template.MyBundle
 
 class MyProjectService(project: Project) {
 
