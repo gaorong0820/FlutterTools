@@ -96,7 +96,17 @@ tasks {
         )
 
         // Get the latest available change notes from the changelog file
-        changeNotes.set(provider { changelog.getLatest().toHTML() })
+        changeNotes.set(
+            File(projectDir, "README.md").readText().lines().run {
+                val start = "<!-- Change Notes -->"
+                val end = "<!-- Change Notes end -->"
+
+                if (!containsAll(listOf(start, end))) {
+                    throw GradleException("Change Notes not found in README.md:\n$start ... $end")
+                }
+                subList(indexOf(start) + 1, indexOf(end))
+            }.joinToString("\n").run { markdownToHTML(this) }
+        )
     }
 
     runPluginVerifier {
